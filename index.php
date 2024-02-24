@@ -629,8 +629,5 @@ function writeDataToFile($data, $filePath)
             } ?>
         </form>
     </main>
-    <script>
-    </script>
 </body>
-
 </html>
