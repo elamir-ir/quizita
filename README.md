@@ -1,5 +1,5 @@
 <div align="center">
-	<a href="https://elamir.site/quizita" target="_blank"><img src="resources/images/logo-square.png" alt="Quizita logo" width="300"></a>
+	<a href="https://elamir.site/quizita" target="_blank"><img src="logo-square.png" alt="Quizita logo" width="300"></a>
 	<br/>
 	<h1>Quizita: Quiz Template Made Simple</h1>
 </div>
