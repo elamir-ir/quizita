@@ -4,11 +4,8 @@
 	<h1>Quizita: Quiz Template Made Simple</h1>
 </div>
 
-# Quizita
-A simple quiz template written fully in PHP
+# Features
 
-<br>
-### Features
 This quiz template is a single PHP file you can copy and paste to your host after adding your QAs.
 <ul>
   <li>No database setup needed</li>
@@ -16,8 +13,8 @@ This quiz template is a single PHP file you can copy and paste to your host afte
   <li>No dependency needed</li>
 </ul>
 All data will be saved into php files inside a <i>list</i> directory with each file representing a specific user.
-<br>
-### Installation
+
+# Installation
 This sample quiz consists of 14 questions and an initial ID slide (totalling 15 slides), you'll need to modify these in the file to reach your desired outcome (take it as a todo list):
 <ol>
   <li>Page title</li>
