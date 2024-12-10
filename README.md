@@ -24,6 +24,3 @@ This sample quiz consists of 14 questions and an initial ID slide (totalling 15 
   <li>Points for each answer</li>
   <li>Number of slides</li>
 </ol>
-
-# Demo
-You can try a demo from here: <a href="https://elamir.site/quizita">Quizita demo</a>
