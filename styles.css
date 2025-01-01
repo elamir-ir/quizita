@@ -1,0 +1,152 @@
+
+        /* UNCOMMENT THE LINES BELOW IF YOU WANT A CUSTOM FONT FOR THE PAGE
+        @font-face {
+            font-family: Vazir;
+            src: url("./Vazirmatn-Regular.ttf");
+        }
+        */
+
+        input[type=submit] {
+            transition-duration: 0.4s;
+            background-color: #fff;
+            color: #ef233c;
+            border: 2px solid #ef233c;
+            font-size: 20px;
+            padding: 5px 20px;
+            border-radius: 10px;
+        }
+
+        input[type=submit]:hover {
+            background-color: #ef233c;
+            color: white;
+            cursor: pointer;
+        }
+
+        .wrapper {
+            display: inline-flex;
+            background: #fff;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            padding: 20px 32px 20px 15px;
+        }
+
+        .wrapper .option {
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 0 10px 0px;
+            border: 2px solid lightgrey;
+            transition: all 0.3s ease;
+        }
+
+        .wrapper .option .dot {
+            height: 20px;
+            width: 20px;
+            background: #d9d9d9;
+            border-radius: 50%;
+            position: relative;
+            margin-right: 4px;
+        }
+
+        .wrapper .option .dot::before {
+            position: absolute;
+            content: "";
+            top: 4px;
+            left: 4px;
+            width: 12px;
+            height: 12px;
+            background: #ef233c;
+            border-radius: 50%;
+            opacity: 0;
+            transform: scale(1.5);
+            transition: all 0.3s ease;
+        }
+        #option-1, #option-2 {
+            /* Setting opcaity to 0% instead of display:none makes
+            the buttons invisible but the error messages visible! :D */
+           opacity: 0%;
+        }
+        #option-1:checked:checked~.option-1,
+        #option-2:checked:checked~.option-2 {
+            border-color: #ef233c;
+            background: #ef233c;
+        }
+
+        #option-1:checked:checked~.option-1 .dot,
+        #option-2:checked:checked~.option-2 .dot {
+            background: #fff;
+        }
+
+        #option-1:checked:checked~.option-1 .dot::before,
+        #option-2:checked:checked~.option-2 .dot::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .wrapper .option span {
+            font-size: 20px;
+            color: #808080;
+        }
+
+        #option-1:checked:checked~.option-1 span,
+        #option-2:checked:checked~.option-2 span {
+            color: #fff;
+        }
+
+        html {
+            background:
+                linear-gradient(180deg, rgba(248, 184, 139, 0) 20%, rgba(248, 184, 139, .1) 20%, rgba(248, 184, 139, .1) 40%, rgba(248, 184, 139, .2) 40%, rgba(248, 184, 139, .2) 60%, rgba(248, 184, 139, .4) 60%, rgba(248, 184, 139, .4) 80%, rgba(248, 184, 139, .5) 80%),
+                linear-gradient(45deg, rgba(250, 248, 132, .3) 20%, rgba(250, 248, 132, .4) 20%, rgba(250, 248, 132, .4) 40%, rgba(250, 248, 132, .5) 40%, rgba(250, 248, 132, .5) 60%, rgba(250, 248, 132, .6) 60%, rgba(250, 248, 132, .6) 80%, rgba(250, 248, 132, .7) 80%),
+                linear-gradient(-45deg, rgba(186, 237, 145, 0) 20%, rgba(186, 237, 145, .1) 20%, rgba(186, 237, 145, .1) 40%, rgba(186, 237, 145, .2) 40%, rgba(186, 237, 145, .2) 60%, rgba(186, 237, 145, .4) 60%, rgba(186, 237, 145, .4) 80%, rgba(186, 237, 145, .6) 80%),
+                linear-gradient(90deg, rgba(178, 206, 254, 0) 20%, rgba(178, 206, 254, .3) 20%, rgba(178, 206, 254, .3) 40%, rgba(178, 206, 254, .5) 40%, rgba(178, 206, 254, .5) 60%, rgba(178, 206, 254, .7) 60%, rgba(178, 206, 254, .7) 80%, rgba(178, 206, 254, .8) 80%),
+                linear-gradient(-90deg, rgba(242, 162, 232, 0) 20%, rgba(242, 162, 232, .4) 20%, rgba(242, 162, 232, .4) 40%, rgba(242, 162, 232, .5) 40%, rgba(242, 162, 232, .5) 60%, rgba(242, 162, 232, .6) 60%, rgba(242, 162, 232, .6) 80%, rgba(242, 162, 232, .8) 80%),
+                linear-gradient(180deg, rgba(254, 163, 170, 0) 20%, rgba(254, 163, 170, .4) 20%, rgba(254, 163, 170, .4) 40%, rgba(254, 163, 170, .6) 40%, rgba(254, 163, 170, .6) 60%, rgba(254, 163, 170, .8) 60%, rgba(254, 163, 170, .8) 80%, rgba(254, 163, 170, .9) 80%);
+            background-color: #ef233c;
+            background-size: 100% 100%;
+            min-height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ef233c;
+            margin: 0;
+            font-size: 40px;
+        }
+
+        main {
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        main h2 {
+            color: #ef233c;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .box {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            width: 100%;
+            box-sizing: border-box;
+            font-family: montserrat;
+            color: #2C3E50;
+            font-size: 13px;
+        }
